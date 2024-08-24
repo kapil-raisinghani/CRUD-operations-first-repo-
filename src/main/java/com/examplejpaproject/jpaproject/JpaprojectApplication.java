@@ -17,7 +17,7 @@ public class JpaprojectApplication {
 																				// for the user class that we created in
 																				// the jpaproject package in the
 																				// src/main/java folder
-		/*
+		
 		 //CREATE
 		 //to save the user, we can use the following code
 		  //for single user, we can use the following code -
@@ -25,10 +25,8 @@ public class JpaprojectApplication {
 		  user u = new user(); // This is the user object that we created
 		  u.setName("Uttam"); // This is the name of the user object that we created
 		  u.setCity("delhi"); // This is the city of the user object that we created
-		  user u1 = userRepository.save(u); // This is the save method that we created
-		  in the UserRepository interface
-		  System.out.println(u1); // This is the print statement that we created to
-		  print the user object that we created
+		  user u1 = userRepository.save(u); // This is the save method that we created in the UserRepository interface
+		  System.out.println(u1); // This is the print statement that we created to print the user object that we created
 		  
 		  
 		  //for multiple users, we can use the following code
@@ -44,17 +42,11 @@ public class JpaprojectApplication {
 		  u4.setName("Rohit");
 		  u4.setCity("Pune");
 		  
-		  List<user> users = List.of(u2, u3, u4); // This is the list of users that we
-		  created
-		  Iterable<user> result = userRepository.saveAll(users); // This is the saveAll
-		  method that we created in the UserRepository interface
-		  result.forEach(user -> System.out.println(user)); // This is the forEach
-		  method that we created to print the user object that we created
-		  
-		 */
-
+		  List<user> users = List.of(u2, u3, u4); // This is the list of users that we created
+		  Iterable<user> result = userRepository.saveAll(users); // This is the saveAll method that we created in the UserRepository interface
+		  result.forEach(user -> System.out.println(user)); // This is the forEach method that we created to print the user object that we created
 		
-        /*
+
 		 //READ
 		 //to get the user, we can use the following code
 		 //example - to get the user with id 2
@@ -72,20 +64,19 @@ public class JpaprojectApplication {
 		 
 	
 		 
-		 */
-		/*
+		 
 
 		//UPDATE
 		//to update the user, we can use the following code
 		//example - to update the user with id 2
 		//first we need to get the user with id 2
 		Optional<user> optional1 = userRepository.findById(2);
-		user userId2 = optional1.get();
-		System.out.println(userId2);
+		user userId = optional1.get();
+		System.out.println(userId);
 		//then we need to update the user with id 2
-		userId2.setName("Rahul Kumar");
-		userId2.setCity("Bangalore");
-		user result2 = userRepository.save(userId2);
+		userId.setName("Rahul Kumar");
+		userId.setCity("Bangalore");
+		user result2 = userRepository.save(userId);
 		
 		System.out.println(result2);
 		
@@ -101,10 +92,10 @@ public class JpaprojectApplication {
 		System.out.println(result3);
 		
 		 
-		 */
+		 
 
 
-         /*
+         
 		  
 		 //DELETE
 		 //to delete the user, we can use the following code
@@ -124,7 +115,7 @@ public class JpaprojectApplication {
 		 userRepository.deleteAll();  
 		 //deleted all users successfully
 
-		  */
+		  
 
 		 
 		 
